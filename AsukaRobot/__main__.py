@@ -60,35 +60,33 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 PM_START_TEXT = """
-*Hey B!tch {},*
-*Myself 𝗔𝘀𝘂𝗸𝗮 𝗟𝗮𝗻𝗴𝗹𝗲𝘆 𝗦𝗼𝗿𝘆𝘂, Pilot On Evangelion Unit-02 As Well As A Powerful Group Management Bot.*
+*Kᴏɴɪᴄʜɪᴡᴀ {},*
+*I'ᴍ Kᴀᴍɪsᴀᴛᴏ Aʏᴀᴋᴀ, A Gᴀᴍᴇ Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ.*
 
-❍ *EVA Unit - 02*
-❍ *Uptime* - {}
-❍ *Python Version* - {}
+*Hɪᴛ Tʜᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Lɪsᴛ Oғ Mʏ Cᴏᴍᴍᴀɴᴅs.××*
 
-*Hit The The Help Button To Get List Of My Commands.××*
 
-*• @AsukaRobot Powered By* [𝗞𝗮𝗶𝘇𝘂𝗿𝘆𝘂](https://t.me/TheKaizuryu)
+
+
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="➕️ Add Asuka To Your Chat ➕️",
-                             url="https://t.me/AsukaRobot?startgroup=true"),
+                             text="➕️ Aᴅᴅ Aʏᴀᴋᴀ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕️",
+                             url="https://t.me/AyakaXRobot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(
-                             text="Kaizuryu",
-                             url="https://t.me/TheKaizuryu"),
+                             text="Sᴜᴘᴘᴏʀᴛ",
+                             url="https://t.me/Akatsukibots_support"),
                        InlineKeyboardButton(
-                             text="About Asuka",
-                             callback_data="asuka_"),
+                             text="Uᴘᴅᴀᴛᴇs",
+                             url="https://t.me/Akatsukibots_support"),
                    ],
                   [
                         InlineKeyboardButton(
-                             text="Help & Cmds ❔",
+                             text="Hᴇʟᴘ Aɴᴅ Cᴍᴅs",
                              callback_data="help_back"),
                     ],
     ]
@@ -120,7 +118,7 @@ ABOUT3 = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Gr
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}] *Asuka* here!
+Hey [{}] *Aayaka* here!
 I Help Admins To Manage Their Groups!
 Main commands available :
  ‣ /help: PM's you this message.
@@ -151,7 +149,7 @@ Asuka_IMG = (
       "https://telegra.ph/file/3c6cb9b50381170c95278.jpg",
 )
 
-TEXXT = "Yes B!tch, I Am Alive And Working Fine.\nCheck Out The Buttons Mentioned Below.",
+TEXXT = "Yᴇs I'ᴍ Aʟɪᴠᴇ Aɴᴅ Wᴏʀᴋɪɴɢ Fɪɴᴇ.\nCʜᴇᴄᴋ Oᴜᴛ Tʜᴇ Bᴜᴛᴛᴏɴs Mᴇɴᴛɪᴏɴᴇᴅ Bᴇʟᴏᴡ.",
 
 Asuka_N_IMG = (
       "https://telegra.ph/file/0b5e88c90238c357641a7.jpg",
@@ -166,9 +164,9 @@ Asuka_PIC = "https://telegra.ph/file/eedea672a770ec92363bd.jpg"
 
 Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
 
-PM_PHOTO = "https://telegra.ph/file/fefd65c0e2ccb00453407.jpg"
+PM_PHOTO = "https://te.legra.ph/file/b98c4f80de051c702d425.mp4"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/d03f381c8178a8fd2dc27.jpg"
+Asuka_DISPACHER_PIC = "https://te.legra.ph/file/ea99f30d53f23b7a73f1f.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
@@ -227,9 +225,9 @@ for module_name in ALL_MODULES:
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
-    dispatcher.bot.send_photo(
+    dispatcher.bot.send_video(
         chat_id=chat_id,
-        photo=(PM_PHOTO),
+        video=(PM_PHOTO),
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=keyboard)
@@ -291,8 +289,8 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.full_name
             id = update.effective_user.id
 
-            update.effective_message.reply_photo(
-                photo=(PM_PHOTO),
+            update.effective_message.reply_video(
+                video=(PM_PHOTO),
                 caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
@@ -308,17 +306,17 @@ def start(update: Update, context: CallbackContext):
         first = update.effective_user.full_name
         chat = update.effective_chat.title
         update.effective_message.reply_video(
-                video="https://telegra.ph/file/c49829f9f5d65947cbc7e.mp4",
-                caption="Yes B!tch, I Am Alive And Working Fine. \nCheck Out The Buttons Mentioned Below.",
+                video="https://te.legra.ph/file/9a87ede0595f7f9152b29.mp4",
+                caption="Yᴇs I'ᴍ Aʟɪᴠᴇ Aɴᴅ Wᴏʀᴋɪɴɢ Fɪɴᴇ. \nCʜᴇᴄᴋ Oᴜᴛ Tʜᴇ Bᴜᴛᴛᴏɴs Mᴇɴᴛɪᴏɴᴇᴅ Bᴇʟᴏᴡ.",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
-                             text="Support",
+                             text="Sᴜᴘᴘᴏʀᴛ",
                              url="t.me/AsukaSupport"),
                        InlineKeyboardButton(
-                             text="Updates",
+                             text="Uᴘᴅᴀᴛᴇs",
                              url="t.me/AsukaUpdates")
                      ]
                 ]
@@ -792,13 +790,13 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• Evangelion Unit-02 Booted Up!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• ", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
-                             text="Off-Topic",
-                             url="https://t.me/Anime_Chat_XKaizuryu")
+                             text="Start",
+                             url="http://t.me/AyakaXRobot?start")
                      ]
                 ]
             ),
