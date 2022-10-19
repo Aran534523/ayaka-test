@@ -51,13 +51,13 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    Asuka = f"• **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm Asuka**\n"
-    Asuka += f"• **My Uptime** - `{uptime}`\n"
-    Asuka += f"• **Telethon Version** - `{version.__version__}`\n"
-    Asuka += f"• **PTB Version** - `{telegram.__version__}`\n"
-    Asuka += f"• **Pyrogram Version** - `{pyro}`\n"
-    Asuka += f"• **My Master** - [Xelcius](tg://user?id={OWNER_ID})\n\n"
-    Asuka += f"Thanks For Adding Me In {yes.chat.title}"
+    Asuka = f"⚪ **Hᴇʏ [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'ᴍ Aʏᴀᴋᴀ**\n"
+    Asuka += f"⚪ **Mʏ Uᴘᴛɪᴍᴇ** - `{uptime}`\n"
+    Asuka += f"⚪ **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ** - `{version.__version__}`\n"
+    Asuka += f"⚪ **PTB Vᴇʀsɪᴏɴ** - `{telegram.__version__}`\n"
+    Asuka += f"⚪ **Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ** - `{pyro}`\n"
+    Asuka += f"⚪ **Mʏ Mᴀsᴛᴇʀ** - [Oʙɪᴛᴏ](tg://user?id={OWNER_ID})\n\n"
+    Asuka += f"Tʜᴀɴᴋs Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {yes.chat.title}"
     BUTTON = [[Button.url("Support Chat", "https://t.me/AsukaSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
     on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/d03f381c8178a8fd2dc27.jpg",caption=Asuka, buttons=BUTTON)
 
@@ -65,4 +65,4 @@ async def hmm(yes):
 async def repo(event):
     Asuka = f"**Hey [{event.sender.first_name}](tg://user?id={event.sender.id}), Click The Button Below To Get My Repo**\n\n"
     BUTTON = [[Button.url("GitHub", "https://github.com/RimuruDemonlord/AsukaRobot"), Button.url("Developer", "https://t.me/Xelcius")]]
-    await borg.send_file(event.chat_id, file="https://telegra.ph/file/64adcb1bb932846962ab0.jpg", caption=Asuka, buttons=BUTTON)
+    await borg.send_file(event.chat_id, file="https://telegra.ph/file/9857c078b05db85aa887d.mp4", caption=Asuka, buttons=BUTTON)
