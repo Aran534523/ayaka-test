@@ -52,10 +52,15 @@ async def hmm(yes):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     Asuka = f"⚪ **Hᴇʏ [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'ᴍ Aʏᴀᴋᴀ**\n"
+    
     Asuka += f"⚪ **Mʏ Uᴘᴛɪᴍᴇ** - `{uptime}`\n"
+    
     Asuka += f"⚪ **Tᴇʟᴇᴛʜᴏɴ Vᴇʀsɪᴏɴ** - `{version.__version__}`\n"
+    
     Asuka += f"⚪ **PTB Vᴇʀsɪᴏɴ** - `{telegram.__version__}`\n"
+    
     Asuka += f"⚪ **Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ** - `{pyro}`\n"
+    
     Asuka += f"⚪ **Mʏ Mᴀsᴛᴇʀ** - [Oʙɪᴛᴏ](tg://user?id={OWNER_ID})\n\n"
     Asuka += f"Tʜᴀɴᴋs Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {yes.chat.title}"
     BUTTON = [[Button.url("Support Chat", "https://t.me/AsukaSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
