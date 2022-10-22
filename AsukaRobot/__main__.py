@@ -166,7 +166,7 @@ Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
 
 PM_PHOTO = "https://te.legra.ph/file/b98c4f80de051c702d425.mp4"
 
-Asuka_DISPACHER_PIC = "https://te.legra.ph/file/ea99f30d53f23b7a73f1f.jpg"
+Asuka_DISPACHER_PIC = "https://telegra.ph/file/76d803a67bc9e6a63e449.mp4"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
@@ -790,7 +790,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_text(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n*", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n*", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
