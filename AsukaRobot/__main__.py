@@ -63,7 +63,7 @@ PM_START_TEXT = """
 *Kᴏɴɪᴄʜɪᴡᴀ {},*
 *I'ᴍ Kᴀᴍɪsᴀᴛᴏ Aʏᴀᴋᴀ, A Gᴀᴍᴇ Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ.*
 
-*Hɪᴛ Tʜᴇ Hᴇʟᴘ Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Lɪsᴛ Oғ Mʏ Cᴏᴍᴍᴀɴᴅs.××*
+*Hɪᴛ Tʜᴇ /help Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Lɪsᴛ Oғ Mʏ Cᴏᴍᴍᴀɴᴅs.××*
 
 
 
@@ -86,8 +86,8 @@ buttons = [
                    ],
                   [
                         InlineKeyboardButton(
-                             text="Hᴇʟᴘ Aɴᴅ Cᴍᴅs",
-                             callback_data="help_back"),
+                             text="Aᴋᴀᴛsᴜᴋɪ Nᴇᴛᴡᴏʀᴋ",
+                             url="https://t.me/AkatsukiXNetwork"),
                     ],
     ]
 
