@@ -76,7 +76,7 @@ def inlinequery(update: Update, _) -> None:
             "description": "Kazuha Network",
             "message_text": "Click the button below to get the Akatsuki Network Info.",
             "thumb_urL": "https://telegra.ph/file/c15d720297bc782ac65ea.jpg",
-            "keyboard": ".Kazuha",
+            "keyboard": ".kazuha",
         },
         {
             "title": "Account info on Ayaka",
