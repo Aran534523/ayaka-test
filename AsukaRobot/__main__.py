@@ -162,7 +162,7 @@ Asuka_N_IMG = (
 
 Asuka_PIC = "https://telegra.ph/file/622475986ba3d03ef0073.jpg"
 
-Asuka_VID = "https://telegra.ph/file/622475986ba3d03ef0073.jpg"
+Asuka_VID = "https://telegra.ph/file/f1e36934d02cded4a1776.mp4"
 
 PM_PHOTO = "https://telegra.ph/file/364a58b54be1063ae738b.mp4"
 
