@@ -166,7 +166,7 @@ Asuka_VID = "https://telegra.ph/file/f1e36934d02cded4a1776.mp4"
 
 PM_PHOTO = "https://telegra.ph/file/364a58b54be1063ae738b.mp4"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/8afdc68c747a5d51105b1.jpg"
+Asuka_DISPACHER_PIC = "https://telegra.ph/file/f1e36934d02cded4a1776.mp4"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
