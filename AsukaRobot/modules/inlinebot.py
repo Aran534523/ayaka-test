@@ -67,36 +67,36 @@ def inlinequery(update: Update, _) -> None:
         {
             "title": "Ayaka",
             "description": "AyakaRobot Inline",
-            "message_text": "Click the button below to get the Asuka Inline.",
-            "thumb_urL": "https://telegra.ph/file/93b575c4c4da42d9fa4b2.jpg",
-            "keyboard": ".asuka",
+            "message_text": "Click the button below to get the Ayaka Inline.",
+            "thumb_urL": "https://telegra.ph/file/285bec10b29b44609e2bf.jpg",
+            "keyboard": ".ayaka",
         },
         {
-            "title": "Akatsuki",
-            "description": "Akatsuki Network",
+            "title": "Kazuha",
+            "description": "Kazuha Network",
             "message_text": "Click the button below to get the Akatsuki Network Info.",
-            "thumb_urL": "https://telegra.ph/file/5daac1fcf88ca6f177ef4.jpg",
-            "keyboard": ".akatsuki",
+            "thumb_urL": "https://telegra.ph/file/c15d720297bc782ac65ea.jpg",
+            "keyboard": ".Kazuha",
         },
         {
             "title": "Account info on Ayaka",
             "description": "Look up a Telegram account in Ayaka database",
             "message_text": "Click the button below to look up a person in Ayaka database using their Telegram ID",
-            "thumb_urL": "https://telegra.ph/file/3c93a66c6751088a00fbd.jpg",
+            "thumb_urL": "https://telegra.ph/file/16dadfb54b1ec3a689d34.jpg",
             "keyboard": ".info",
         },
         {
             "title": "Help",
             "description": "Help Inline Commands",
             "message_text": "Click the button below to get Help Of Inline Commands.",
-            "thumb_urL": "https://telegra.ph/file/645e0b5ca6382d6d73ab5.jpg",
+            "thumb_urL": "https://telegra.ph/file/ab60d9649663dfbfa7714.jpg",
             "keyboard": ".help",
         },
         {
             "title": "Anilist",
             "description": "Search anime and manga on AniList.co",
             "message_text": "Click the button below to search anime and manga on AniList.co",
-            "thumb_urL": "https://telegra.ph/file/ace91d9ae6af3881d3940.jpg",
+            "thumb_urL": "https://telegra.ph/file/eb9326281dc263b6be591.jpg",
             "keyboard": ".anilist",
         },
     ]
@@ -179,7 +179,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
         text += f"\n\nThis person is my Owner"
         nation_level_present = True
     elif user.id in DEV_USERS:
-        text += f"\n\nThis Person is a part Developer of Asuka"
+        text += f"\n\nThis Person is a part Developer of Ayaka"
         nation_level_present = True
     elif user.id in DRAGONS:
         text += f"\n\nThe Nation level of this person is Royal"
@@ -219,7 +219,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Report Error",
-                    url=f"https://t.me/AsukaSupport",
+                    url=f"https://t.me/Akatsukibots_support",
                 ),
                 InlineKeyboardButton(
                     text="Search again",
@@ -233,7 +233,7 @@ def inlineinfo(query: str, update: Update, context: CallbackContext) -> None:
     results = [
         InlineQueryResultArticle(
             id=str(uuid4()),
-            thumb_url="https://telegra.ph/file/0b5e88c90238c357641a7.jpg",
+            thumb_url="https://telegra.ph/file/eb4122f3b770ac5653cd0.jpg",
             title=f"User info of {html.escape(user.first_name)}",
             input_message_content=InputTextMessageContent(text, parse_mode=ParseMode.HTML,
                                                           disable_web_page_preview=True),
@@ -293,26 +293,26 @@ def asuka(query: str, update: Update, context: CallbackContext) -> None:
     user = context.bot.get_chat(user_id)
     sql.update_user(user.id, user.username)
     about_text = f"""
-    ──── • Asuka Langley Soryu • ────
+    ──── ۞ Kamisato Ayaka ۞ ────
     """
     results: list = []
     kb = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="Asuka Robot",
-                    url=f"https://t.me/AsukaRobot",
+                    text="Ayaka",
+                    url=f"https://t.me/AyakaXRobot",
                 ),
 
             ],
             [
                 InlineKeyboardButton(
                     text="Support",
-                    url=f"https://t.me/AsukaSupport",
+                    url=f"https://t.me/Akatsukibots_support",
                 ),
                  InlineKeyboardButton(
                     text="Updates",
-                    url=f"https://t.me/AsukaUpdates",
+                    url=f"https://t.me/AyakaUpdates",
                 ),
 
             ],
@@ -328,8 +328,8 @@ def asuka(query: str, update: Update, context: CallbackContext) -> None:
     results.append(
         InlineQueryResultPhoto(
             id=str(uuid4()),
-            title="Asuka",
-            description="Get Asuka Inline",
+            title="Ayaka",
+            description="Get Ayaka Inline",
             thumb_url="https://telegra.ph/file/62ad4ddfcb9ec5189a590.jpg",
             photo_url="https://telegra.ph/file/f6be5a2866ae719a17fb0.jpg",
             caption=about_text,
@@ -542,14 +542,14 @@ def kaizuryu(query: str, update: Update, context: CallbackContext) -> None:
     user = context.bot.get_chat(user_id)
     sql.update_user(user.id, user.username)
     about_text = f"""
-    ──── • The Kaizuryu Network • ────
+    ──── • Kazuha Network • ────
     """
     results: list = []
     kb = InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    text="Kaizuryu Network",
+                    text="Kazuha Network",
                     url=f"https://t.me/TheKaizuryu",
                 ),
 
@@ -557,7 +557,7 @@ def kaizuryu(query: str, update: Update, context: CallbackContext) -> None:
             [
                 InlineKeyboardButton(
                     text="Chat Group",
-                    url=f"https://t.me/+RH-EofbQPhwyNGE1",
+                    url=f"https://t.me/AnimechatKazuha",
                 ),
 
             ],
