@@ -82,7 +82,7 @@ buttons = [
                              url="https://t.me/Akatsukibots_support"),
                        InlineKeyboardButton(
                              text="Uᴘᴅᴀᴛᴇs",
-                             url="https://t.me/Akatsukibots_support"),
+                             url="https://t.me/AyakaUpdates"),
                    ],
                   [
                         InlineKeyboardButton(
@@ -107,7 +107,7 @@ REPO_TXT = """
 • Report Any Kind Of Bugs At [Support](t.me/AsukaSupport)
 """
 
-ABOUT3 = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
+ABOUT3 = """Hello [{}], My name is *Kamisato Ayaka*. A Powerful Telegram Group Management Bot built to help you manage Group easily.
             \n ‣ I can Restrict Users.
             \n ‣ I can Greet Users with customizable welcome message and even set a group rules
             \n ‣ I have an advanced Anti-Flood System which will help you to safe group from Spammmer.
@@ -118,7 +118,7 @@ ABOUT3 = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Gr
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}] *Aayaka* here!
+Hey [{}] *Ayaka* here!
 I Help Admins To Manage Their Groups!
 Main commands available :
  ‣ /help: PM's you this message.
@@ -142,31 +142,31 @@ ACRUISE = """
 """
 
 Asuka_IMG = (
-      "https://telegra.ph/file/645e0b5ca6382d6d73ab5.jpg",
-      "https://telegra.ph/file/3c6cb9b50381170c95278.jpg",
-      "https://telegra.ph/file/4e964395ea9138c943dce.jpg",
-      "https://telegra.ph/file/6e6a21dda7dd3525f7f94.jpg",
-      "https://telegra.ph/file/3c6cb9b50381170c95278.jpg",
+      "https://telegra.ph/file/8d33aff8b23dab6a66500.jpg",
+      "https://telegra.ph/file/eb4122f3b770ac5653cd0.jpg",
+      "https://telegra.ph/file/66efdc49180a44dbe2d07.jpg",
+      "https://telegra.ph/file/8afdc68c747a5d51105b1.jpg",
+      "https://telegra.ph/file/622475986ba3d03ef0073.jpg",
 )
 
 TEXXT = "Yᴇs I'ᴍ Aʟɪᴠᴇ Aɴᴅ Wᴏʀᴋɪɴɢ Fɪɴᴇ.\nCʜᴇᴄᴋ Oᴜᴛ Tʜᴇ Bᴜᴛᴛᴏɴs Mᴇɴᴛɪᴏɴᴇᴅ Bᴇʟᴏᴡ.",
 
 Asuka_N_IMG = (
-      "https://telegra.ph/file/0b5e88c90238c357641a7.jpg",
-      "https://telegra.ph/file/3c93a66c6751088a00fbd.jpg",
-      "https://telegra.ph/file/3b4eed00be4dfaa189fff.jpg",
-      "https://telegra.ph/file/6cbc8452a2796ad58c2f9.jpg",
-      "https://telegra.ph/file/3c6cb9b50381170c95278.jpg"
+      "https://telegra.ph/file/8d33aff8b23dab6a66500.jpg",
+      "https://telegra.ph/file/eb4122f3b770ac5653cd0.jpg",
+      "https://telegra.ph/file/66efdc49180a44dbe2d07.jpg",
+      "https://telegra.ph/file/8afdc68c747a5d51105b1.jpg",
+      "https://telegra.ph/file/622475986ba3d03ef0073.jpg"
 
 )
 
-Asuka_PIC = "https://telegra.ph/file/eedea672a770ec92363bd.jpg"
+Asuka_PIC = "https://telegra.ph/file/622475986ba3d03ef0073.jpg"
 
-Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
+Asuka_VID = "https://telegra.ph/file/622475986ba3d03ef0073.jpg"
 
-PM_PHOTO = "https://te.legra.ph/file/b98c4f80de051c702d425.mp4"
+PM_PHOTO = "https://telegra.ph/file/364a58b54be1063ae738b.mp4"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/76d803a67bc9e6a63e449.mp4"
+Asuka_DISPACHER_PIC = "https://telegra.ph/file/8afdc68c747a5d51105b1.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
@@ -314,10 +314,10 @@ def start(update: Update, context: CallbackContext):
                   [
                        InlineKeyboardButton(
                              text="Sᴜᴘᴘᴏʀᴛ",
-                             url="t.me/AsukaSupport"),
+                             url="https://t.me/Akatsukibots_support"),
                        InlineKeyboardButton(
                              text="Uᴘᴅᴀᴛᴇs",
-                             url="t.me/AsukaUpdates")
+                             url="https://t.me/AyakaUpdates")
                      ]
                 ]
             ),
