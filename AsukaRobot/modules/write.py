@@ -40,7 +40,7 @@ async def handwrite(_, message: Message):
 
         name = lol.split(None, 0)[0].replace(" ", "%20")
 
-        m = await pgram.send_message(message.chat.id, "waito..")
+        m = await pgram.send_message(message.chat.id, "Wᴀɪᴛ Bᴀᴋᴀ")
 
         photo = "https://apis.xditya.me/write?text=" + name
 
