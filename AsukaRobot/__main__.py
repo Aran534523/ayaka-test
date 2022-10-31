@@ -62,7 +62,9 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Kᴏɴɪᴄʜɪᴡᴀ {},*
 *I'ᴍ Kᴀᴍɪsᴀᴛᴏ Aʏᴀᴋᴀ, A Gᴀᴍᴇ Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ.*
-
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+❍ *Uptime:* `{}`
+➖➖➖➖➖➖➖➖➖➖➖➖➖
 *Hɪᴛ Tʜᴇ /help Bᴜᴛᴛᴏɴ Tᴏ Gᴇᴛ Lɪsᴛ Oғ Mʏ Cᴏᴍᴍᴀɴᴅs.××*
 
 
