@@ -316,16 +316,16 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n• Disaster Level: God"
+        text += "\n\n• Disaster Level: Mᴀsᴛᴇʀ"
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n• Disaster Level: Evangelion Master"
+        text += "\n\n• Disaster Level: Oɴɪɪ Cʜᴀɴ"
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n• Disaster Levl: Evangelion Pilot"
+        text += "\n\n• Disaster Levl: Sᴇɴᴘᴀɪ"
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n• Disaster Level: Evangelion 3.0"
+        text += "\n\n• Disaster Level: Sᴇɴsᴇɪ"
         disaster_level_present = True
     elif user.id in TIGERS:
         text += "\n\n• Disaster Level: Evangelion 2.0"
