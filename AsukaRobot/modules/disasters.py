@@ -65,16 +65,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This Pro IS Already Evangelion Pilot")
+        message.reply_text("This Baka IS Already Senpai")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested HQ to promote a Evangelion 3.0 To Evangelion Pilot."
+        rt += "Requested HQ to promote a Senpai To Sensei."
         data['supports'].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested HQ to promote a Evangelion 2.0 to A Evangelion Pilot."
+        rt += "Requested HQ to promote a Sensei to A Evangelion Pilot."
         data['whitelists'].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -85,7 +85,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + "\nA New Evangelion Pilot Appointed!".format(
+        rt + "\nA New Sensei Appointed!".format(
             user_member.first_name))
 
     log_message = (
@@ -124,7 +124,7 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested HQ To Demote This User From Evangelion Pilot To Evangelion 3.0"
+        rt += "Requested HQ To Demote This User From Sensei To Senpai"
         data['sudos'].remove(user_id)
         DRAGONS.remove(user_id)
 
@@ -482,7 +482,7 @@ def tigerlist(update: Update, context: CallbackContext):
 @whitelist_plus
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
-    reply = "<b>Known Sword Demons:</b>\n"
+    reply = "<b>Support K Chode:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
