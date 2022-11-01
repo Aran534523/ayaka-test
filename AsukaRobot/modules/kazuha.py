@@ -1,8 +1,8 @@
 from AsukaRobot import pgram
 
-@pgram.on_message(filters.command("void") & ~filters.edited & ~filters.bot)
+@BOT.on(events.NewMessage(incoming=True, pattern=r"\%svoid(?: |$)(.*)" % hl))
 
-async def hmm(client, message):
+async def void(event):
 
     PHOTO="https://telegra.ph/file/e5808adf6d1bc748d6440.jpg"
 
