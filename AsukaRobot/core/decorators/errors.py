@@ -4,7 +4,7 @@ import sys
 import traceback
 from functools import wraps
 from AsukaRobot import pbot
-from AsukaRobot.vars import LOG_CHANNEL
+from AsukaRobot.sample_config.py import JOIN_LOGGER
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 
 def split_limits(text):
