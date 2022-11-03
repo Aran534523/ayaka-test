@@ -1,4 +1,4 @@
-import AsukaRobot.modules.mongo.karma_mongo as ksql
+import AsukaRobot.modules.karma_mongo as ksql
 
 from AsukaRobot.modules.sql import log_channel_sql as logsql
 
