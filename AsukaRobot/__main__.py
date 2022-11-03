@@ -91,8 +91,8 @@ buttons = [
                    ],
                   [
                         InlineKeyboardButton(
-                             text="Aᴋᴀᴛsᴜᴋɪ Nᴇᴛᴡᴏʀᴋ",
-                             url="https://t.me/AkatsukiXNetwork"),
+                             text="Mʏsᴛɪᴄ Nᴇᴛᴡᴏʀᴋ",
+                             url="https://t.me/MysticXNetwork"),
                     ],
     ]
 
