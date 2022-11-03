@@ -40,7 +40,7 @@ async def handler(event):
 
     if not reply_message.media:
 
-        await event.reply("```Reply to a image/sticker.```")
+        await event.reply("```Reply to a image/sticker Baka.```")
 
         return
 
