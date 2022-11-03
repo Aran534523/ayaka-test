@@ -6,7 +6,7 @@ from pyrogram import filters
 
 from AsukaRobot import DRAGONS, pbot as app
 
-import AsukaRobot.modules.mongo.karma_mongo as sql
+import AsukaRobot.modules.karma_mongo as sql
 
 from AsukaRobot.ex_plugins.dbfunctions import (
 
