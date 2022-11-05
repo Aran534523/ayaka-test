@@ -117,7 +117,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         anon = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://api.bakufu.tech/api/chatbot/cleverbot?name=DragonEye&owner=DRAGONEYE&message={anon}" 
+        url = f"https://merissachatbot.tk/api/apikey=1985665341-MERISSArk4GRy9iD0/Neko/@Awesome-Prince/message={anon}" 
         request = requests.get(url) 
         results = json.loads(request.text) 
         result = f"{results['reply']}"
