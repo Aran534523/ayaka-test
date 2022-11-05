@@ -84,7 +84,7 @@ buttons = [
                    [
                        InlineKeyboardButton(
                              text="Sᴜᴘᴘᴏʀᴛ",
-                             url="https://t.me/Akatsukibots_support"),
+                             url="https://t.me/Mysticbots_support"),
                        InlineKeyboardButton(
                              text="Uᴘᴅᴀᴛᴇs",
                              url="https://t.me/AyakaUpdates"),
