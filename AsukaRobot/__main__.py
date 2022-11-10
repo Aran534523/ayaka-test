@@ -795,7 +795,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*I'ᴍ Bᴀᴄᴋ Tᴏ Mʏ Jᴏʙ \nAʀᴀɴ Sᴀᴍᴀ ❤️*", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_video(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!/n*", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
