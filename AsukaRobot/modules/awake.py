@@ -61,7 +61,7 @@ async def hmm(yes):
     
     Asuka += f"۞ **Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ** - `{pyro}`\n"
     
-    Asuka += f"۞ **Mʏ Mᴀsᴛᴇʀ** - [ARAN](tg://user?id={OWNER_ID})\n\n"
+    Asuka += f"۞ **Mʏ Mᴀsᴛᴇʀ** - [Oʙɪᴛᴏ](tg://user?id={OWNER_ID})\n\n"
     Asuka += f"Tʜᴀɴᴋs Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {yes.chat.title}"
     BUTTON = [[Button.url("Support Chat", "https://t.me/mysticbots_support"), Button.url("Updates", "https://t.me/AyakaUpdates")]]
     on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/f1e36934d02cded4a1776.mp4",caption=Asuka, buttons=BUTTON)
