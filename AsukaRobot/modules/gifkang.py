@@ -13,7 +13,7 @@ def mention_username(username: str, name: str) -> str:
     """
     Args:
         username (:obj:`str`): The username of chat which you want to mention.
-        name (:obj:`str`): The name the mention is showing.
+        name (:obj:`str`): The namethe mention is showing.
     Returns:
         :obj:`str`: The inline mention for the user as HTML.
     """
