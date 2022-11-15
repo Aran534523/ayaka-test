@@ -22,12 +22,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
 from datetime import datetime
-from AsukaRobot import DEV_USERS, OWNER_ID
-from AsukaRobot import (
-    OWNER_ID,
-    dispatcher
-)
-from AsukaRobot.sample_config import OWNER_USERNAME, SUPPORT_CHAT
+
 import time
 from telegram import InlineKeyboardButton, ParseMode, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
@@ -38,13 +33,13 @@ def bug(update: Update, context: CallbackContext):
         user_id = update.effective_message.from_user.id
         message = update.effective_message
         msg_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
-        if user_id == OWNER_ID:
+        if user_id == 1258798381:
             message.reply_text(
                     "*Why owner of bot reporting a bug?? Go fix yourself*", parse_mode=ParseMode.MARKDOWN
                 )
             return
         if update.effective_chat.type == "private":
-            update.effective_message.reply_text(f" *This command only works in public groups.*\n\n Visit @{SUPPORT_CHAT} to report bugs related to bot's pm.", parse_mode=ParseMode.MARKDOWN)
+            update.effective_message.reply_text(f" *This command only works in public groups.*\n\n Visit @Mysticbots_Support to report bugs related to bot's pm.", parse_mode=ParseMode.MARKDOWN)
             return
         
         if len(args) >= 2:
@@ -53,7 +48,7 @@ def bug(update: Update, context: CallbackContext):
                 link_chat_id = message.chat.username
                 message_link = f"https://t.me/{link_chat_id}/{msg_id}"
             else:
-                update.effective_message.reply_text(f" *This command only works in public groups.*\n\n Visit @{SUPPORT_CHAT} to report bugs related to bot's pm.", parse_mode=ParseMode.MARKDOWN)
+                update.effective_message.reply_text(f" *This command only works in public groups.*\n\n Visit @Mysticbots_Support to report bugs related to bot's pm.", parse_mode=ParseMode.MARKDOWN)
                 return
         else:
             message.reply_text(
@@ -67,7 +62,7 @@ def bug(update: Update, context: CallbackContext):
         datetimes_fmt = "%d-%m-%Y"
         datetimes = datetime.utcnow().strftime(datetimes_fmt)
         bug_report = f"""
-<b>#BUG :  @{OWNER_USERNAME}
+<b>#BUG :  @Brokenhero_08
 From User :  {mention}
 User ID :  {user_id}
 Group :  @{link_chat_id}
@@ -75,7 +70,7 @@ Bug Report :  {bugs}
 Event Stamp :  {datetimes}</b>
 """
 
-        if user_id != OWNER_ID:
+        if user_id != 1258798381:
             message.reply_text(
                 f"*Bug Report : {bugs}*\n\n"
                 " *The bug was successfully reported to the support group!*",
@@ -92,7 +87,7 @@ Event Stamp :  {datetimes}</b>
                 parse_mode=ParseMode.MARKDOWN
             )
             dispatcher.bot.send_photo(
-                f"@{SUPPORT_CHAT}",
+                f"@Mysticbots_Support",
                 photo="https://telegra.ph/file/1988605be767d5409dbc7.jpg",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
@@ -115,7 +110,7 @@ Event Stamp :  {datetimes}</b>
             )
     except:
         update.effective_message.reply_text(
-            f"*ERROR!!! Contact @{SUPPORT_CHAT}*",
+            f"*ERROR!!! Contact @Mysticbots_Support*",
             parse_mode=ParseMode.MARKDOWN,
         )
 
@@ -128,7 +123,7 @@ def close_send_photo(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "close_send_photo_":
         user = update.effective_user
-        if user.id in DEV_USERS:
+        if user.id in 5732788031:
             query.message.delete()
         else:
             msg = update.effective_message.reply_text(
