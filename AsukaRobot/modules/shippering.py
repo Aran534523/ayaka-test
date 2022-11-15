@@ -24,9 +24,9 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-from Shikimori import pbot as app
-from Shikimori.utils.errors import capture_err
-from Shikimori.Extras.dbfunctions import get_couple, save_couple
+from AsukaRobot import pbot as app
+from AsukaRobot.utils.errors import capture_err
+from AsukaRobot.Extras.dbfunctions import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
