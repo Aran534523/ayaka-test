@@ -93,7 +93,7 @@ Event Stamp :  {datetimes}</b>
             )
             dispatcher.bot.send_photo(
                 f"@{SUPPORT_CHAT}",
-                photo=https://telegra.ph/file/1988605be767d5409dbc7.jpg,
+                photo="https://telegra.ph/file/1988605be767d5409dbc7.jpg",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
                     [
