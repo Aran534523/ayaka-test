@@ -23,11 +23,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from datetime import datetime
 from AsukaRobot import DEV_USERS, OWNER_ID
-from Shikimori import (
+from AsukaRobot import (
     OWNER_ID,
     dispatcher
 )
-from Shikimori.sample_config.py import OWNER_USERNAME, SUPPORT_CHAT
+from AsukaRobot.sample_config.py import OWNER_USERNAME, SUPPORT_CHAT
 import time
 from telegram import InlineKeyboardButton, ParseMode, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
