@@ -27,7 +27,7 @@ from Shikimori import (
     OWNER_ID,
     dispatcher
 )
-from Shikimori.sample_config.py import OWNER_USERNAME, SUPPORT_CHAT,
+from Shikimori.sample_config.py import OWNER_USERNAME, SUPPORT_CHAT
 import time
 from telegram import InlineKeyboardButton, ParseMode, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
