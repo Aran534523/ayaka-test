@@ -27,7 +27,7 @@ from AsukaRobot import (
     OWNER_ID,
     dispatcher
 )
-from AsukaRobot.vars import OWNER_USERNAME, SUPPORT_CHAT
+from AsukaRobot.sample_config import OWNER_USERNAME, SUPPORT_CHAT
 import time
 from telegram import InlineKeyboardButton, ParseMode, InlineKeyboardMarkup, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, CommandHandler
