@@ -1,4 +1,6 @@
-from AsukaRobot.sql import db
+import threading
+from sqlalchemy import Column, String
+from AsukaRobot.modules.sql import db
 
 nsfwchatsdb = db.nsfwchats
 
