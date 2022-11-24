@@ -14,17 +14,17 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = "awoo"  # integer value, dont use ""
-    API_HASH = "awoo"
-    TOKEN = "awoo"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 5132611794 # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "awoo"
-    SUPPORT_CHAT = 'AsukaSupport'  #Your own group for support, do not add the @
-    JOIN_LOGGER = -123456789  #Prints any new group the bot is added to, prints just the name and ID.
-    EVENT_LOGS = -123446789  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    API_ID = "13401171"  # integer value, dont use ""
+    API_HASH = "de9a4069010f2d8b7b67d3657dbae3ed"
+    TOKEN = "5565680885:AAGgwH7gE4VXxMSYWdFyW_TqkBSZ8xnWJG4"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID = 1258798381 # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "brokenhero_08"
+    SUPPORT_CHAT = 'Mysticbots_support'  #Your own group for support, do not add the @
+    JOIN_LOGGER = -1001842489628  #Prints any new group the bot is added to, prints just the name and ID.
+    EVENT_LOGS = -1001842489628  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
 
     #RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'something://somewhat:user@hosturl:port/databasename'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://xpbfxplb:Ku4xIXElfc9hFbI0uMGIf4cmTVtinGJU@fanny.db.elephantsql.com/xpbfxplb'  # needed for any database modules
     LOAD = []
     NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
     WEBHOOK = False
