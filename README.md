@@ -12,7 +12,6 @@ _**Aᴠᴀɪʟᴀʙʟᴇ Oɴ Tᴇʟᴇɢʀᴀᴍ As [AyakaXrobot](http://t.me/Ay
 ━━━━━━━━━━━━━━━━━━━━
 
 <p align="center">
-<a href="https://github.com/Aran-Sama/AyakaRobot/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-GPL-3.0-red?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-red?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=red&label=telethon&logo=python&logoColor=blue&style=for-the-badge" /></a>
 <a href="https://pypi.org/project/Pyrogram/"> <img src="https://img.shields.io/pypi/v/pyrogram?color=red&label=pyrogram&logo=python&logoColor=blue&style=for-the-badge" /></a>
